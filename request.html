@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파리바게트 | 상담신청</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="./images/arrow_back_icn.svg" alt="뒤로가기"></a>
+        <p>상담신청</p>
+        <a href="#"><img src="./images/search_icn.svg" alt="검색"></a>
+    </header>
+    <main>
+        <div class="title">
+            <h1>가맹점 상담신청</h1>
+            <p>가맹점 관련하여 궁금한 점은 언제든 문의주시기 바랍니다.<br>* 항목은 필수 입력사항입니다</p>
+        </div>
+        <form action="#" method="post" id="request_form">
+            <fieldset class="user_info">
+                <legend class="skip">상담 신청 양식</legend>
+                <dl>
+                    <dt>*이름</dt>
+                    <dd><input type="text" name="user_name" placeholder="아이디" required></dd>
+                    <dt>*휴대폰번호</dt>
+                    <dd><input type="text" name="user_phone" placeholder="휴대폰번호" required></dd>
+                    <dt>*이메일</dt>
+                    <dd class="select_mail">
+                        <input type="email" name="user_mail" placeholder="이메일" required>
+                        <span>@</span>
+                        <select name="email">
+                            <option value="google">google.com</option>
+                            <option value="naver">naver.com</option>
+                            <option value="kakao">kakako.com</option>
+                            <option value="hanmail">hanmail.net</option>
+                            <option value="etc">직접 입력</option>
+                        </select>
+                    </dd>
+                    <dt>*창업희망지역</dt>
+                    <dd><input type="text" name="user_wish" required></dd>
+                    <!-- 신청계기 영역 -->
+                    <dt>*신청 계기</dt>
+                    <dd class="radio_route">
+                        <div class="radio r1">
+                            <input type="radio" name="route" value="internet" id="internet" checked="checked">
+                            <label for="internet">인터넷 검색</label>
+                        </div>
+                        <div class="radio r2">
+                            <input type="radio" name="route" value="visit" id="visit">
+                            <label for="visit">매장 방문</label>
+                        </div>
+                        <div class="radio r3">
+                            <input type="radio" name="route" value="introduce" id="introduce">
+                            <label for="introduce">지인 소개</label>
+                        </div>
+                        <div class="radio r4">
+                            <input type="radio" name="route" value="consulting" id="consulting">
+                            <label for="consulting">컨설팅/부동산</label>
+                        </div>
+                        <div class="radio r5">
+                            <input type="radio" name="route" value="etc" id="etc">
+                            <label for="etc">기타</label>
+                        </div>
+                    </dd>
+                    <dt>*제목</dt>
+                    <dd><input type="text" name="user_title" required></dd>
+                    <dt>*내용</dt>
+                    <dd><textarea name="user_contents" id="user_contents" cols="30" rows="10"></textarea></dd>
+                </dl>
+                <div class="result">
+                    <button type="submit" id="request_btn">상담 신청하기</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <nav>
+        <a href="./index.html" class="nav_contents">
+            <img src="./images/home_n_nav_001.png" alt="매장소개">
+            <span class="labeling">매장소개</span>
+        </a>
+        <a href="#" class="nav_contents">
+            <img src="./images/phone_y_nav_002.png" alt="상담신청">
+            <span class="labeling">상담신청</span>
+        </a>
+        <a href="#" class="nav_contents">
+            <img src="./images/delivery_n_nav_003.png" alt="배송서비스">
+            <span class="labeling">배송서비스</span>
+        </a>
+        <a href="#" class="nav_contents">
+            <img src="./images/promotion_n_nav_004.png" alt="프로모션">
+            <span class="labeling">프로모션</span>
+        </a>
+    </nav>
+</body>
+</html>
