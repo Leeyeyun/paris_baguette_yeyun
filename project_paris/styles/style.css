@@ -15,8 +15,7 @@ nav {
 }
 nav a {display:flex; flex-flow:column nowrap; justify-content:center; align-items:center;}
 nav a img {width:28px; height:28px; margin-bottom:5px;}
-nav a span {font-size:0.75rem; font-weight:500; color:#4D81D2;}
-nav .nav_contents:nth-child(2) .labeling {color:#023586;}
+nav a span {font-size:0.75rem; font-weight:500; color:#023586;}
 /* main */
 main {padding:0 16px;}
 main .title {text-align:left; padding:16px; border-bottom:2px solid #023586;}
@@ -93,22 +92,22 @@ main .contents_2 {
     display:flex; justify-content:space-between; align-items:center;
     margin:48px 0;
 }
-main .contents_2 h3 {font-weight:500px; line-height:1.2; color:#fff;}
+main .contents_2 h3 {font-weight:500; line-height:1.2; color:#fff;}
 main .contents_2 h3 span {font-size:1.375rem; font-weight:700; line-height:1.6;}
 main .contents_2 p {width:183px; text-align:right; font-size:0.75rem; color:#fff; line-height:1.5;}
 /* 3. 온 가족 사랑 파리바게트 */
-main .contents_3 {height:363px;}
-main .contents_3 h3 {font-weight:500px; line-height:1.2; color:#023586; margin-bottom:16px;}
+main .contents_3 {height:363px; padding:0 16px;}
+main .contents_3 h3 {font-weight:500; line-height:1.2; color:#023586; margin-bottom:16px;}
 main .contents_3 h3 span {font-size:1.375rem; font-weight:700; line-height:1.6;}
-main .contents_3 p {font-size:0.75rem; line-height:1.5; color:#023586;}
-main .contents_3 .bread_wrap {padding:32px 16px; display:flex; flex-flow:row wrap; justify-content:space-between; align-content:space-between;}
-main .contents_3 .bread_wrap img {width:167px;}
+main .contents_3 p {font-size:0.75rem; line-height:1.5; color:#023586; margin-bottom:32px;}
+main .contents_3 .bread_wrap {display:flex; flex-flow:row wrap; justify-content:space-between; align-content:space-between;}
+main .contents_3 .bread_wrap img {width:167px; margin-bottom:32px;}
 /* 4. 프랜차이즈 창업절차 */
-main .contents_4 {margin-top:150px; margin-bottom:32px;}
-main .contents_4 h3 {font-weight:500px; line-height:1.2; color:#023586; margin-bottom:16px;}
+main .contents_4 {margin-top:230px; margin-bottom:32px; padding:0 16px;}
+main .contents_4 h3 {font-weight:500; line-height:1.2; color:#023586; margin-bottom:32px;}
 main .contents_4 h3 span {font-size:1.375rem; font-weight:700; line-height:1.6;}
 main .contents_4 .procedure {
-    display:flex; flex-flow:row wrap; justify-content:space-between; padding: 0 16px;
+    display:flex; flex-flow:row wrap; justify-content:space-between;
 }
 main .contents_4 .procedure li {
     background-color:#E6D9B7; width:110px; height:137px; justify-content:center;
